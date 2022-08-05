@@ -7,7 +7,7 @@ bookdown::gitbook:
       after: |
         <li><a href="./"> کمک مالی به پروژه </a></li>
 
-    edit: https://github.com/opensciencemooc/book/edit/master/%s
+    edit: https://github.com/wikitunel/edit/main/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
