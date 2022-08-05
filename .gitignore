@@ -7,3 +7,5 @@ rsconnect
 placeholder.Rcheck/
 placeholder*.tar.gz
 placeholder*.tgz
+docs/libs/gitbook-2.6.7/css/style.css
+docs/libs/gitbook-2.6.7/css/plugin-fontsettings.css
