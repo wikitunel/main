@@ -138,7 +138,8 @@ output:
 مقادیر پیکربندی را به مقادیر زیر تغیر دهید:
 
 ><p dir="ltr"
-{<br>
+<br>
+{
     "server":["::1", "0.0.0.0"],<br>
     "mode":"tcp_and_udp",<br>
     "server_port":552,<br>
@@ -227,7 +228,8 @@ output:
 مقادیر زیر را در فایل کانفیگ قرار دهید و فایل را ذخیره کنید:
 
 ><p dir="ltr"
-{<br>
+<br>
+{
     "server":["::1", "0.0.0.0"],<br>
     "mode":"tcp_and_udp",<br>
     "server_port":552,<br>
