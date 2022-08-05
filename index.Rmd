@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [book.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: opensciencemooc/book
+github-repo: wikitunel/main
 description: "This is an example of using the bookdown package to write the Open Science MOOC Book that will link all modules and supplemental material."
 ---
 
