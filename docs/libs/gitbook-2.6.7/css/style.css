@@ -2525,3 +2525,6 @@ TODO: remove when updating fontawesome*/
 .fa-whatsapp:before {
   content: "\f232";
 }
+embed{
+    display: none
+}
