@@ -254,7 +254,7 @@ output:
 
 سپس یک cmd یا powershell در مسیر پوشه برنامه باز کنید و دستور زیر را با توجه به مسیر پوشه برنامه وارد کنید:
 
-C:\Users\{your_username}\Downloads\shadowsocks-v1.15.0-alpha.8.x86_64-pc-windows-msvc\ssserver.exe -c config.json
+>C:\\Users\\{your_username}\\Downloads\\shadowsocks-v1.15.0-alpha.8.x86_64-pc-windows-msvc\\ssserver.exe -c config.json
 
 <center><img src="images/5.jpg" width="800" /></center>
 
