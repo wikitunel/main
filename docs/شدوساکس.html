@@ -90,6 +90,7 @@
 <li class="chapter" data-level="1.3" data-path="شدوساکس.html"><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس"><i class="fa fa-check"></i><b>1.3</b> راه اندازی سرور شدوساکس <a name="راه-اندازی-سرور-شدوساکس"></a></a>
 <ul>
 <li class="chapter" data-level="1.3.1" data-path="شدوساکس.html"><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس-روی-لینوکس"><i class="fa fa-check"></i><b>1.3.1</b> راه اندازی سرور شدوساکس روی لینوکس <a name="راه-اندازی-سرور-شدوساکس-روی-لینوکس"></a></a></li>
+<li class="chapter" data-level="1.3.2" data-path="شدوساکس.html"><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس-روی-ویندوز"><i class="fa fa-check"></i><b>1.3.2</b> راه اندازی سرور شدوساکس روی ویندوز <a name="راه-اندازی-سرور-شدوساکس-روی-ویندوز"></a></a></li>
 </ul></li>
 <li class="chapter" data-level="1.4" data-path="شدوساکس.html"><a href="شدوساکس.html#راه-اندازی-کلاینت-شدوساکس"><i class="fa fa-check"></i><b>1.4</b> راه اندازی کلاینت شدوساکس <a name="راه-اندازی-کلاینت-شدوساکس"></a></a>
 <ul>
@@ -143,7 +144,7 @@
 <li><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس">راه اندازی سرور شدوساکس</a>
 <ul>
 <li><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس-روی-لینوکس">راه اندازی سرور شدوساکس روی لینوکس</a></li>
-<li><a href="#راه-اندازی-سرور-شدوساکس-روی-ویندوز">راه اندازی سرور شدوساکس روی ویندوز</a></li>
+<li><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس-روی-ویندوز">راه اندازی سرور شدوساکس روی ویندوز</a></li>
 </ul></li>
 <li><a href="شدوساکس.html#راه-اندازی-کلاینت-شدوساکس">راه اندازی کلاینت شدوساکس</a>
 <ul>
@@ -345,6 +346,59 @@ systemctl status shadowsocks-libev
 <p>Active: <span style="color:#6ff46f;font-weight:bold">active (running)</span></p>
 </blockquote>
 <p>تبریک! سرویس شدوساکس آماده استفاده میباشد. برای استفاده از آن به قسمت آموزش استفاده در کلاینت های مختلف بروید.</p>
+</div>
+<div id="راه-اندازی-سرور-شدوساکس-روی-ویندوز" class="section level3 hasAnchor" number="1.3.2">
+<h3><span class="header-section-number">1.3.2</span> راه اندازی سرور شدوساکس روی ویندوز <a name="راه-اندازی-سرور-شدوساکس-روی-ویندوز"></a><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس-روی-ویندوز" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>بعد از خریداری سرور مجازی ویندوز سرور با استفاده از rdp یا vnc به آن متصل شوید.
+سپس بسته ی shadowsocks-rust windows-msvc را از صفحه ی زیر برای ویندوز دانلود کنید:</p>
+<div class="figure">
+<img src="https://github.com/shadowsocks/shadowsocks-rust/releases" alt="" />
+<p class="caption"><a href="https://github.com/shadowsocks/shadowsocks-rust/releases" class="uri">https://github.com/shadowsocks/shadowsocks-rust/releases</a></p>
+</div>
+<p>لینک مستقیم نسخه windows-msvc ویندوز:</p>
+<div class="figure">
+<embed src="https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.15.0-alpha.8/shadowsocks-v1.15.0-alpha.8.x86_64-pc-windows-msvc.zip?" />
+<p class="caption"><a href="https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.15.0-alpha.8/shadowsocks-v1.15.0-alpha.8.x86_64-pc-windows-msvc.zip" class="uri">https://github.com/shadowsocks/shadowsocks-rust/releases/download/v1.15.0-alpha.8/shadowsocks-v1.15.0-alpha.8.x86_64-pc-windows-msvc.zip</a>?</p>
+</div>
+<p>سپس آن را از حالت فشرده خارج کرده و در پوشه آن یک فایل با نام config.json با استفاده از notepad ایجاد کنید:</p>
+<center>
+<img src="images/4.jpg" width="800" />
+</center>
+<p>مقادیر زیر را در فایل کانفیگ قرار دهید و فایل را ذخیره کنید:</p>
+<blockquote>
+<p dir="ltr"
+{<br>
+"server":["::1", "0.0.0.0"],<br>
+"mode":"tcp_and_udp",<br>
+"server_port":552,<br>
+"local_port":1080,<br>
+"password":"6VWJciim7ok@rmwC#ZZY8w",<br>
+"timeout":60,<br>
+"method":"chacha20-ietf-poly1305"
+}
+</p>
+</blockquote>
+<p>توجه داشته باشید که در بخش server_port یک پورت آزاد در سیستم را انتخاب کنید که سرویسی بر روی آن درحال اجرا نباشد.
+در بخش password یک کلمه عبور قوی برای اتصال به سرور انتخاب کنید
+در بخش method میتوانید روش رمزنگاری ارتباط را انتخاب کنید. بطور پیشفرض بر روی chacha20-ietf-poly1305 تنظیم شده است ولی رمزنگاری های زیر قابل انتخاب هستند:</p>
+<blockquote>
+<p dir="ltr">
+“aes-256-cfb”<br>
+“aes-128-cfb”<br>
+“chacha20”<br>
+“chacha20-ietf”<br>
+“aes-256-gcm”<br>
+“aes-128-gcm”<br>
+“chacha20-poly1305” or “chacha20-ietf-poly1305”
+</p>
+</blockquote>
+<p>سپس یک cmd یا powershell در مسیر پوشه برنامه باز کنید و دستور زیر را با توجه به مسیر پوشه برنامه وارد کنید:</p>
+<p>C:{your_username}-v1.15.0-alpha.8.x86_64-pc-windows-msvc.exe -c config.json</p>
+<center>
+<img src="images/5.jpg" width="800" />
+</center>
+<p>با اجرای دستور بالا درخواست باز شدن پورت مربوطه از طرف فایروال درخواست میشود. با تایید آن برنامه حالت اجرا در می آید.
+تبریک! سرویس شدوساکس آماده استفاده میباشد. برای استفاده از آن به قسمت آموزش استفاده در کلاینت های مختلف بروید.</p>
 </div>
 </div>
 <div id="راه-اندازی-کلاینت-شدوساکس" class="section level2 hasAnchor" number="1.4">
