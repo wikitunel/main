@@ -51,7 +51,7 @@ audio:not([controls]) {
   height: 0;
 }
 html {
-  font-family: sans-serif;
+  font-family: "vazir",sans-serif;
 }
 body,
 figure {
@@ -91,7 +91,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
+  font-family: "vazir",monospace, serif;
   font-size: 1em;
 }
 pre {
@@ -130,7 +130,7 @@ button,
 input,
 select,
 textarea {
-  font-family: inherit;
+  font-family: "vazir",inherit;
   font-size: 100%;
   margin: 0;
 }
@@ -212,7 +212,7 @@ table {
 }
 .book .book-header,
 .book .book-summary {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "vazir","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .fa-lg {
   font-size: 1.33333333em;
