@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>سرفصل 1 - شدوساکس | ساخت تونل های امن برای گذر از سانسور</title>
+  <meta name="description" content="This is an example of using the bookdown package to write the Open Science MOOC Book that will link all modules and supplemental material." />
+  <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="سرفصل 1 - شدوساکس | ساخت تونل های امن برای گذر از سانسور" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is an example of using the bookdown package to write the Open Science MOOC Book that will link all modules and supplemental material." />
+  <meta name="github-repo" content="opensciencemooc/book" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="سرفصل 1 - شدوساکس | ساخت تونل های امن برای گذر از سانسور" />
+  
+  <meta name="twitter:description" content="This is an example of using the bookdown package to write the Open Science MOOC Book that will link all modules and supplemental material." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="module2.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./"> ویکی تونل | راهکارهای ضد سانسور </a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>مقدمه</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#مشارکت-در-این-پروژه"><i class="fa fa-check"></i>مشارکت در این پروژه</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#حمایت-و-کمک-مالی-به-پروژه"><i class="fa fa-check"></i>حمایت و کمک مالی به پروژه</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="شدوساکس.html"><a href="شدوساکس.html"><i class="fa fa-check"></i><b>1</b> - شدوساکس</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="شدوساکس.html"><a href="شدوساکس.html#سرفصل-ها"><i class="fa fa-check"></i><b>1.1</b> سرفصل ها</a></li>
+<li class="chapter" data-level="1.2" data-path="شدوساکس.html"><a href="شدوساکس.html#معرفی-شدوساکس"><i class="fa fa-check"></i><b>1.2</b> معرفی شدوساکس <a name="معرفی-شدوساکس"></a></a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="شدوساکس.html"><a href="شدوساکس.html#برای-راه-اندازی-شدوساکس-به-چه-چیزی-احتیاج-دارم"><i class="fa fa-check"></i><b>1.2.1</b> برای راه اندازی شدوساکس به چه چیزی احتیاج دارم؟ <a name="برای-راه-اندازی-شدوساکس-به-چه-چیزی-احتیاج-دارم"></a></a></li>
+<li class="chapter" data-level="1.2.2" data-path="شدوساکس.html"><a href="شدوساکس.html#از-کجا-سرور-تهیه-کنم"><i class="fa fa-check"></i><b>1.2.2</b> از کجا سرور تهیه کنم <a name="از-کجا-سرور-تهیه-کنم"></a></a></li>
+<li class="chapter" data-level="1.2.3" data-path="شدوساکس.html"><a href="شدوساکس.html#حداقل-مشخصات-سرور-مجازی-برای-راه-اندازی-سرویس-شدوساکس-چقدر-است"><i class="fa fa-check"></i><b>1.2.3</b> حداقل مشخصات سرور مجازی برای راه اندازی سرویس شدوساکس چقدر است <a name="حداقل-مشخصات-سرور-مجازی-برای-راه-اندازی-سرویس-شدوساکس-چقدر-است"></a></a></li>
+<li class="chapter" data-level="1.2.4" data-path="شدوساکس.html"><a href="شدوساکس.html#آیا-حکومت-از-بیرون-میتواند-از-نصب-سرویس-شدوساکس-روی-سرور-شما-باخبر-شود"><i class="fa fa-check"></i><b>1.2.4</b> آیا حکومت از بیرون میتواند از نصب سرویس شدوساکس روی سرور شما باخبر شود؟ <a name="آیا-حکومت-از-بیرون-میتواند-از-نصب-سرویس-شدوساکس-روی-سرور-شما-باخبر-شود"></a></a></li>
+<li class="chapter" data-level="1.2.5" data-path="شدوساکس.html"><a href="شدوساکس.html#چرا-این-کتابچه-را-ایجاد-کردیم"><i class="fa fa-check"></i><b>1.2.5</b> چرا این کتابچه را ایجاد کردیم؟ <a name="چرا-این-کتابچه-را-ایجاد-کردیم"></a></a></li>
+<li class="chapter" data-level="1.2.6" data-path="شدوساکس.html"><a href="شدوساکس.html#توصیه-شما-برای-ایجاد-بستری-امن-برای-استفاده-آزاد-از-اینترنت-چیست"><i class="fa fa-check"></i><b>1.2.6</b> توصیه شما برای ایجاد بستری امن برای استفاده آزاد از اینترنت چیست؟ <a name="توصیه-شما-برای-ایجاد-بستری-امن-برای-استفاده-آزاد-از-اینترنت-چیست"></a></a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="شدوساکس.html"><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس"><i class="fa fa-check"></i><b>1.3</b> راه اندازی سرور شدوساکس <a name="راه-اندازی-سرور-شدوساکس"></a></a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="شدوساکس.html"><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس-روی-لینوکس"><i class="fa fa-check"></i><b>1.3.1</b> راه اندازی سرور شدوساکس روی لینوکس <a name="راه-اندازی-سرور-شدوساکس-روی-لینوکس"></a></a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="شدوساکس.html"><a href="شدوساکس.html#راه-اندازی-کلاینت-شدوساکس"><i class="fa fa-check"></i><b>1.4</b> راه اندازی کلاینت شدوساکس <a name="راه-اندازی-کلاینت-شدوساکس"></a></a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="شدوساکس.html"><a href="شدوساکس.html#استفاده-از-شدوساکس-در-کلاینت-اندروید"><i class="fa fa-check"></i><b>1.4.1</b> استفاده از شدوساکس در کلاینت اندروید <a name="استفاده-از-شدوساکس-در-کلاینت-اندروید"></a></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="module2.html"><a href="module2.html"><i class="fa fa-check"></i><b>2</b> وی ۲ ری</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="module2.html"><a href="module2.html#معرفی-وی-۲-ری"><i class="fa fa-check"></i><b>2.1</b> معرفی وی ۲ ری</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="module3.html"><a href="module3.html"><i class="fa fa-check"></i><b>3</b> او بی اف اس</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="module3.html"><a href="module3.html#معرفی-او-بی-اف-اس"><i class="fa fa-check"></i><b>3.1</b> معرفی او بی اف اس</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="./"> کمک مالی به پروژه </a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">ساخت تونل های امن برای گذر از سانسور</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="شدوساکس" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">سرفصل 1</span> - شدوساکس<a href="شدوساکس.html#شدوساکس" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<!-- *Estimated time to complete: 60 minutes* -->
+<!-- *Estimated saving time: A lot* -->
+<div id="سرفصل-ها" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> سرفصل ها<a href="شدوساکس.html#سرفصل-ها" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ul>
+<li><a href="شدوساکس.html#معرفی-شدوساکس">معرفی شدوساکس</a>
+<ul>
+<li><a href="شدوساکس.html#برای-راه-اندازی-شدوساکس-به-چه-چیزی-احتیاج-دارم">برای راه اندازی شدوساکس به چه چیزی احتیاج دارم؟</a></li>
+<li><a href="شدوساکس.html#از-کجا-سرور-تهیه-کنم">از کجا سرور تهیه کنم؟</a></li>
+<li><a href="شدوساکس.html#حداقل-مشخصات-سرور-مجازی-برای-راه-اندازی-سرویس-شدوساکس-چقدر-است">حداقل مشخصات سرور مجازی برای راه اندازی سرویس شدوساکس چقدر است؟</a></li>
+<li><a href="شدوساکس.html#آیا-حکومت-از-بیرون-میتواند-از-نصب-سرویس-شدوساکس-روی-سرور-شما-باخبر-شود">آیا حکومت از بیرون میتواند از نصب سرویس شدوساکس روی سرور شما باخبر شود؟</a></li>
+<li><a href="شدوساکس.html#چرا-این-کتابچه-را-ایجاد-کردیم">چرا این کتابچه را ایجاد کردیم؟</a></li>
+<li><a href="شدوساکس.html#توصیه-شما-برای-ایجاد-بستری-امن-برای-استفاده-آزاد-از-اینترنت-چیست">توصیه شما برای ایجاد بستری امن برای استفاده آزاد از اینترنت چیست؟</a></li>
+</ul></li>
+<li><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس">راه اندازی سرور شدوساکس</a>
+<ul>
+<li><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس-روی-لینوکس">راه اندازی سرور شدوساکس روی لینوکس</a></li>
+<li><a href="#راه-اندازی-سرور-شدوساکس-روی-ویندوز">راه اندازی سرور شدوساکس روی ویندوز</a></li>
+</ul></li>
+<li><a href="شدوساکس.html#راه-اندازی-کلاینت-شدوساکس">راه اندازی کلاینت شدوساکس</a>
+<ul>
+<li><a href="شدوساکس.html#استفاده-از-شدوساکس-در-کلاینت-اندروید">استفاده از شدوساکس در کلاینت اندروید</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="معرفی-شدوساکس" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> معرفی شدوساکس <a name="معرفی-شدوساکس"></a><a href="شدوساکس.html#معرفی-شدوساکس" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Shadowsocks_logo.png" width="150" />
+</center>
+<p>شدوساکس (به انگلیسی: Shadowsocks) یک پروکسی رمزگذاری شده با منبع آزاد و متن باز است که به‌طور گسترده در سرزمین اصلی چین برای جلوگیری از سانسور اینترنت استفاده می‌شود. این برنامه در سال ۲۰۱۲ توسط برنامه‌نویس ناشناس چینی به نام مستعار “clowwindy” ساخته شد و از آن زمان تا کنون چندین مرحله پیاده‌سازی پروتکل آن در دسترس قرار گرفته‌است. به‌طور معمول، نرم‌افزار کلاینت یک پروکسی socks5 را بر روی دستگاهی که در حال اجرا است باز می‌کند، که پس از آن ترافیک اینترنتی همانند تونل SSH به آن سمت هدایت می‌شود. بر خلاف یک تونل SSH، شدوساکس می‌تواند ترافیک UDP را نیز پروکسی کند.</p>
+<div id="برای-راه-اندازی-شدوساکس-به-چه-چیزی-احتیاج-دارم" class="section level3 hasAnchor" number="1.2.1">
+<h3><span class="header-section-number">1.2.1</span> برای راه اندازی شدوساکس به چه چیزی احتیاج دارم؟ <a name="برای-راه-اندازی-شدوساکس-به-چه-چیزی-احتیاج-دارم"></a><a href="شدوساکس.html#برای-راه-اندازی-شدوساکس-به-چه-چیزی-احتیاج-دارم" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>برای راه اندازی شدوساکس به عنوان سرویس دهنده شما احتیاج به یک سرور مجازی لینوکس یا ویندوز خارج از ایران دارید که دارای آی پی ثابت باشد.</p>
+<p><br/></p>
+<blockquote>
+<p>برای اطلاعات بیشتر در مورد پشتیبانی از سیستم عامل ها و زبان های برنامه نویسی میتوانید به گیت هاب رسمی شدوساکس مراجعه کنید. <a href="https://github.com/shadowsocks">(گیت هاب رسمی شدوساکس)</a></p>
+</blockquote>
+<p><br/></p>
+<p align="center">
+<i>وبسایت رسمی شدوساکس <a href="https://shadowsocks.org/">https://shadowsocks.org/</a></i>
+</p>
+<p><br/></p>
+</div>
+<div id="از-کجا-سرور-تهیه-کنم" class="section level3 hasAnchor" number="1.2.2">
+<h3><span class="header-section-number">1.2.2</span> از کجا سرور تهیه کنم <a name="از-کجا-سرور-تهیه-کنم"></a><a href="شدوساکس.html#از-کجا-سرور-تهیه-کنم" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>ما نمیتوانیم سرویس دهنده مشخصی به شما معرفی کنیم. درکل فرقی نمیکند از کدام سرویس دهنده ایرانی یا خارجی اقدام به خریداری سرور میکنید. فقط مطمین شوید که سرویس دهنده به حریم خصوصی شما احترام میگذارد.</p>
+<p><br/></p>
+</div>
+<div id="حداقل-مشخصات-سرور-مجازی-برای-راه-اندازی-سرویس-شدوساکس-چقدر-است" class="section level3 hasAnchor" number="1.2.3">
+<h3><span class="header-section-number">1.2.3</span> حداقل مشخصات سرور مجازی برای راه اندازی سرویس شدوساکس چقدر است <a name="حداقل-مشخصات-سرور-مجازی-برای-راه-اندازی-سرویس-شدوساکس-چقدر-است"></a><a href="شدوساکس.html#حداقل-مشخصات-سرور-مجازی-برای-راه-اندازی-سرویس-شدوساکس-چقدر-است" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>حداقل مشخصات لازم برای راه اندازی سرویس شدوساکس..</p>
+<p><br/></p>
+</div>
+<div id="آیا-حکومت-از-بیرون-میتواند-از-نصب-سرویس-شدوساکس-روی-سرور-شما-باخبر-شود" class="section level3 hasAnchor" number="1.2.4">
+<h3><span class="header-section-number">1.2.4</span> آیا حکومت از بیرون میتواند از نصب سرویس شدوساکس روی سرور شما باخبر شود؟ <a name="آیا-حکومت-از-بیرون-میتواند-از-نصب-سرویس-شدوساکس-روی-سرور-شما-باخبر-شود"></a><a href="شدوساکس.html#آیا-حکومت-از-بیرون-میتواند-از-نصب-سرویس-شدوساکس-روی-سرور-شما-باخبر-شود" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>به طور معمول خیر. ولی مطمین شوید جهت استفاده از سرویس اطلاعات اتصال کلاینت را با افراد مطمین به اشتراک میگذارید. چرا که آی پی سرور شما در مشخصات اتصال وجود دارد.</p>
+<p><br/></p>
+</div>
+<div id="چرا-این-کتابچه-را-ایجاد-کردیم" class="section level3 hasAnchor" number="1.2.5">
+<h3><span class="header-section-number">1.2.5</span> چرا این کتابچه را ایجاد کردیم؟ <a name="چرا-این-کتابچه-را-ایجاد-کردیم"></a><a href="شدوساکس.html#چرا-این-کتابچه-را-ایجاد-کردیم" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>با توجه به گسترش سانسور اینترنت توسط دولت جمهوری اسلامی و ایجاد بستر ویژه برای از کار انداختن فیلترشکن های عمومی این کتابچه را ایجاد کردیم.</p>
+<p><br/></p>
+</div>
+<div id="توصیه-شما-برای-ایجاد-بستری-امن-برای-استفاده-آزاد-از-اینترنت-چیست" class="section level3 hasAnchor" number="1.2.6">
+<h3><span class="header-section-number">1.2.6</span> توصیه شما برای ایجاد بستری امن برای استفاده آزاد از اینترنت چیست؟ <a name="توصیه-شما-برای-ایجاد-بستری-امن-برای-استفاده-آزاد-از-اینترنت-چیست"></a><a href="شدوساکس.html#توصیه-شما-برای-ایجاد-بستری-امن-برای-استفاده-آزاد-از-اینترنت-چیست" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>با توجه به سخت گیرانه شدن فیلترینگ و از کارافتادن راه کارهای عمومی عبور از فیلتر توصیه میشود با استفاده از سرورهای شخصی بصورت گروهی اقدام به راه اندازی سرورهای شدوساکس کنید. با اینکه اجاره سرور مجازی بصورت ماهانه هزینه زیادی در بر دارد ولی میتوانید هزینه اجاره سرور را مثلا بین ۴۰ نفر از افرادی که میشناسید تقسیم کنید و بصورت اشتراکی از سرویس استفاده کنید و به این شکل هزینه ماهانه اجاره سرور را به حداقل ممکن
+برسانید.</p>
+<p><br/></p>
+</div>
+</div>
+<div id="راه-اندازی-سرور-شدوساکس" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> راه اندازی سرور شدوساکس <a name="راه-اندازی-سرور-شدوساکس"></a><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="راه-اندازی-سرور-شدوساکس-روی-لینوکس" class="section level3 hasAnchor" number="1.3.1">
+<h3><span class="header-section-number">1.3.1</span> راه اندازی سرور شدوساکس روی لینوکس <a name="راه-اندازی-سرور-شدوساکس-روی-لینوکس"></a><a href="شدوساکس.html#راه-اندازی-سرور-شدوساکس-روی-لینوکس" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>بعد از خرید سرور مجازی لینوکس ابونتو سرور یا سنت او اس با استفاده از ssh یا با استفاده از روش های دیگر به کنسول سرور متصل شوید.</p>
+<p>بجای [root] یوزرنیم و بجای [your-server-ip] آی پی سرور را وارد نمایید.</p>
+<blockquote>
+<p dir="ltr">
+ssh [root]@[your-server-ip]
+</p>
+<p dir="ltr">
+مثال: ssh <a href="mailto:root@98.2.1.3" class="email">root@98.2.1.3</a>
+</p>
+</blockquote>
+<p>اگر با یوزری غیر از root وارد شده اید با استفاده از دستور زیر دسترسی خود را به root ارتقاع دهید
+نکته: بعد از وارد کردن دستور زیر از شما پسورد درخواست میشود لذا آن را وارد نمایید.</p>
+<blockquote>
+<p dir="ltr">
+sudo su
+</p>
+</blockquote>
+<p>برای نصب بسته شدوساکس ابتدا لیست بسته های apt را آپدیت کنید:</p>
+<blockquote>
+<p dir="ltr">
+apt-get update
+</p>
+</blockquote>
+<p>معادل دستور بالا برای لینوکس centOS:</p>
+<blockquote>
+<p dir="ltr">
+yum update
+</p>
+</blockquote>
+<p>سپس با دستور زیر بسته shadowsocks-libev را نصب کنید:</p>
+<blockquote>
+<p dir="ltr">
+yes | apt-get install shadowsocks-libev
+</p>
+</blockquote>
+<p>معادل دستور بالا برای لینوکس centOS:</p>
+<blockquote>
+<p dir="ltr">
+yum install shadowsocks-libev
+</p>
+</blockquote>
+<p>سپس با استفاده از vim یا nano فایل پیکربندی شدوساکس را باز کنید:</p>
+<blockquote>
+<p dir="ltr">
+nano /etc/shadowsocks-libev/config.json
+</p>
+</blockquote>
+<p>فایل پیکربندی دارای مقادیر پیشفرض شبیه به پیکربندی زیر است:</p>
+<blockquote>
+<p dir="ltr">
+{<br>
+“server”:[“::1”, “127.0.0.1”],<br>
+“mode”:“tcp_and_udp”,<br>
+“server_port”:8388,<br>
+“local_port”:1080,<br>
+“password”:“<a href="mailto:WJciim7ok@rmw" class="email">WJciim7ok@rmw</a>”,<br>
+“timeout”:60,<br>
+“method”:“chacha20-ietf-poly1305”
+}
+</p>
+</blockquote>
+<p>مقادیر پیکربندی را به مقادیر زیر تغیر دهید:</p>
+<blockquote>
+<p dir="ltr"
+{<br>
+"server":["::1", "0.0.0.0"],<br>
+"mode":"tcp_and_udp",<br>
+"server_port":552,<br>
+"local_port":1080,<br>
+"password":"6VWJciim7ok@rmwC#ZZY8w",<br>
+"timeout":60,<br>
+"method":"chacha20-ietf-poly1305"
+}
+</p>
+</blockquote>
+<p>توجه داشته باشید که در بخش server_port یک پورت آزاد در سیستم را انتخاب کنید که سرویسی بر روی آن درحال اجرا نباشد.
+در بخش password یک کلمه عبور قوی برای اتصال به سرور انتخاب کنید
+در بخش method میتوانید روش رمزنگاری ارتباط را انتخاب کنید. بطور پیشفرض بر روی chacha20-ietf-poly1305 تنظیم شده است ولی رمزنگاری های زیر قابل انتخاب هستند:</p>
+<blockquote>
+<p dir="ltr">
+“aes-256-cfb”<br>
+“aes-128-cfb”<br>
+“chacha20”<br>
+“chacha20-ietf”<br>
+“aes-256-gcm”<br>
+“aes-128-gcm”<br>
+“chacha20-poly1305” or “chacha20-ietf-poly1305”
+</p>
+</blockquote>
+<p>بعد از ذخیره فایل باید پورتی که در فایل پیکربندی انتخاب کرده اید را روی سیستم باز کنید.
+برای اینکار ابتدا بررسی کنید چه سیستم فایروالی بر روی سیستم شما در حال اجرا است. معمولا بصورت پیشفرض برای ابونتو سرور فایروال ufw فعال است.
+در بعضی مواقع سرویس firewalld برای سیستم تعبیه شده است برای اطمینان میتوانید دستور زیر را وارد کنید:</p>
+<blockquote>
+<p dir="ltr">
+systemctl status ufw
+</p>
+<p dir="ltr">
+systemctl status firewalld
+</p>
+</blockquote>
+<p>هر کدام از وضعیت های سرویس های بالا به رنگ سبز بود به معنی فعال بودن آن است:</p>
+<blockquote>
+<p>Active: <span style="color:#6ff46f;font-weight:bold">active (running)</span></p>
+</blockquote>
+<p>بعد از بررسی نوع فایرفال سیستم برای باز کردن پورت udp/tcp 552 در فایروال ufw از دستور زیر استفاده کنید:
+<br></p>
+<blockquote>
+<p dir="ltr">
+ufw allow 552
+</p>
+</blockquote>
+<p><br>
+برای باز کردن پورت 552 udp/tcp در فایروال firewalld از دستورهای زیر استفاده کنید:</p>
+<blockquote>
+<p dir="ltr">
+firewall-cmd –permanent –add-port=552/tcp
+</p>
+<p dir="ltr">
+firewall-cmd –permanent –add-port=552/udp
+</p>
+</blockquote>
+<p><br/></p>
+<p>برای فعالسازی سرویس شدوساکس و اجرای خودکار آن در هنگام شروع سیستم عامل دستورات زیر را اجرا کنید:</p>
+<blockquote>
+<p dir="ltr">
+systemctl restart shadowsocks-libev
+</p>
+<p dir="ltr">
+systemctl enable shadowsocks-libev
+</p>
+</blockquote>
+<p><br/></p>
+<p>برای مشاهده وضعیت سرویس شدوساکس از دستور زیر استفاده کنید:</p>
+<blockquote>
+<p dir="ltr">
+systemctl status shadowsocks-libev
+</p>
+</blockquote>
+<p><br/></p>
+<p>اگر وضعیت سرویس در حالت active (running) و به رنگ سبز باشد یعنی سرویس با موفقیت نصب شده است و درحال اجرا است</p>
+<blockquote>
+<p>Active: <span style="color:#6ff46f;font-weight:bold">active (running)</span></p>
+</blockquote>
+<p>تبریک! سرویس شدوساکس آماده استفاده میباشد. برای استفاده از آن به قسمت آموزش استفاده در کلاینت های مختلف بروید.</p>
+</div>
+</div>
+<div id="راه-اندازی-کلاینت-شدوساکس" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> راه اندازی کلاینت شدوساکس <a name="راه-اندازی-کلاینت-شدوساکس"></a><a href="شدوساکس.html#راه-اندازی-کلاینت-شدوساکس" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="استفاده-از-شدوساکس-در-کلاینت-اندروید" class="section level3 hasAnchor" number="1.4.1">
+<h3><span class="header-section-number">1.4.1</span> استفاده از شدوساکس در کلاینت اندروید <a name="استفاده-از-شدوساکس-در-کلاینت-اندروید"></a><a href="شدوساکس.html#استفاده-از-شدوساکس-در-کلاینت-اندروید" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>برای استفاده از شدوساکس در کلاینت اندروید کلاینت رسمی آن را از گوگل پلی بر روی گوشی خود نصب کنید:</p>
+<div class="figure">
+<img src="https://play.google.com/store/apps/details?id=com.github.shadowsocks&amp;hl=en&amp;gl=US" alt="" />
+<p class="caption"><a href="https://play.google.com/store/apps/details?id=com.github.shadowsocks&amp;hl=en&amp;gl=US" class="uri">https://play.google.com/store/apps/details?id=com.github.shadowsocks&amp;hl=en&amp;gl=US</a></p>
+</div>
+<p>بعد از نصب و اجرای برنامه همانند تصویر بر روی Manual Settings کلیک کنید</p>
+<center>
+<img src="images/1.jpg" width="300" />
+</center>
+<p>سپس در صفحه ی باز شده اطلاعات سرور را همانند فایل کانفیگ موجود در /etc/shadowsocks-libev/config.json وارد کنید و بر روی تیک تایید کلیک کنید:</p>
+<center>
+<img src="images/2.jpg" width="300" />
+</center>
+<p>توجه کنید در قسمت Server باید آی پی سرور خود را وارد کنید.
+اگر لازم دارید که فقط بخشی از برنامه های شما از شدوساکس استفاده کنند تیک گذینه Apps VPN Mode را زده و از لیست برنامه ها برنامه های مورد نظر خود را انتخاب کنید. در غیر اینصورت برای استفاده از شدوساکس برای تمام برنامه ها این تیک را همانند تصویر بردارید.</p>
+<p>بعد از ذخیره و کلیک بر روی اتصال میتوانید ارتباط خود را تست کنید:</p>
+<center>
+<img src="images/3.jpg" width="300" />
+</center>
+<p><br/></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="module2.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/opensciencemooc/book/edit/master/01-shadowsocks.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["wikitunel.pdf", "wikitunel.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

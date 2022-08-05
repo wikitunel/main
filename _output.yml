@@ -1,0 +1,18 @@
+bookdown::gitbook:
+  css: css/style.css
+  config:
+    toc:
+      before: |
+        <li><a href="./"> ویکی تونل | راهکارهای ضد سانسور </a></li>
+      after: |
+        <li><a href="./"> کمک مالی به پروژه </a></li>
+
+    edit: https://github.com/opensciencemooc/book/edit/master/%s
+    download: ["pdf", "epub"]
+bookdown::pdf_book:
+  includes:
+    in_header: latex/preamble.tex
+  latex_engine: pdflatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default

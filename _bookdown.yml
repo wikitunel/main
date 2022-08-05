@@ -1,0 +1,6 @@
+book_filename: "wikitunel"
+language:
+  ui:
+    chapter_name: "سرفصل "
+delete_merged_file: true
+output_dir: "docs"

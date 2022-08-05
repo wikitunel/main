@@ -1,0 +1,40 @@
+--- 
+title: "ساخت تونل های امن برای گذر از سانسور"
+# author: "انجمن مخفی"
+# date: "۱۴۰۱/۰۵/۱۳"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: opensciencemooc/book
+description: "This is an example of using the bookdown package to write the Open Science MOOC Book that will link all modules and supplemental material."
+---
+
+# مقدمه {-}
+
+***پروژه ویکی تونل یک پروژه متن باز است که به راه و چاره های امن برای گذر از سانسورینگ اینترنت توسط دولت جمهوری اسلامی میپردازد .*** *این پروژه توسط جمعی از متخصصان امنیت سایبری مدیریت میشود و کاربران با اطمینان کامل میتوانند از راه کارهای این کتابچه برای حفظ حریم خصوصی خود و همچنین دور زدن فیلترینگ بویژه در مواقع اعتراضات خیابانی استفاده کنند.*
+
+
+## مشارکت در این پروژه {-}
+این پروژه متن باز است. برای ارایه راهکارهای بیشتر یا اصلاح مشکلات آن ابتدا این پروژه را فورک کرده و بعد از کامیت کردن تغیرات خود پول رکویست بفرستید.
+
+<p align="center"><i><a href="https://github.com/wikitunel">https://github.com/wikitunel</a></i></p>
+
+## حمایت و کمک مالی به پروژه {-}
+ویکی تونل یک پروژه متن باز و رایگان است. با اینحال میتوانید برای انگیزه دادن به تیم این پروژه برای گسترش آن از آدرس کیف پول های زیر استفاده کنید:
+
+بیت کوین: 
+1DYFr9vZcUjz3SVoa1jski2ssiJ7vsigG
+
+اتریوم:
+0x4d1897630f7E7083053AdfeF381908Ae0C1F79Ff
+
+لایت کوین:
+Levn3cjAVGTWu3Hcrh6eYt71kxZBjGZ8hC
+
+دوج کوین:
+DE7oQREPirukRA45mdDCGv4i8M2yZoKBgW
+
+
